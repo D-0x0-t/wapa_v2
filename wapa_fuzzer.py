@@ -219,8 +219,7 @@ class WapaFuzzer:
                 fuzzer_thread.start()
                 sleep(1)
                 if len(wordlist) == wordlist_iterator:
-                    print("[*] Ended fuzzing the wordlist, beacons will be active until fuzzer is stopped.")
-                    break
+                    wordlist_iterator = 0
 
 
     # Dot11Deauth / Dot11Disas section  ///////////////////////////////////////////////////////////////////////////////
