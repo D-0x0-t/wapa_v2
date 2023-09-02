@@ -44,6 +44,8 @@ class PreExecution:
                         wapagp.stop_monitor_mode(interface)
             except:
                 print("[!] DAEMON ERROR!")
+                print("[*] Try executing 'db generate tables' to fix this error and relaunch the shell.")
+                break
     
     def disable_wapa_interface_daemon(self):
         self.execute_wid = False
