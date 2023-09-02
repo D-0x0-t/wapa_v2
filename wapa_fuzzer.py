@@ -284,6 +284,6 @@ class WapaFuzzer:
         for thread in self.allthread_counter:
             thread.join()
         wapadb = WapaDatabase()
-        wapadb.clean_beacons()
+        wapadb.clear_beacons()
         sleep(3)
         self.fuzzer = True
