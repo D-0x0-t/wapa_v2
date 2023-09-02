@@ -224,7 +224,7 @@ class WapaShell(cmd.Cmd):
                             print("[*] Executing fuzzer, press Ctrl+C to stop it, and execute 'fuzz kill' to kill the access points.")
                             self.fuzzer.beacon_fuzzer(wordlist=essid_method, string=charstring, count=count_maxwl, sectype=security_type, intf=iface)
                     elif wordlist_style_check.lower() == "y":
-                        essid_mode = "obtain"
+                        essid_method = "obtain"
                         wordlist_path = input("[>] Path to the wordlist: ")
                         security_type = input("[>] Which security method would you like to use (OPN/WEP/WPA/WPA2/ALL)> ")
                         if security_type.lower() == "opn" or security_type.lower() == "wep" or security_type.lower() == "wpa" or security_type.lower() == "wpa2":
